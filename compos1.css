@@ -3,22 +3,17 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     width: 100%;
     background: rgb(165, 214, 245);
     font-size: 16px;
     font-family: 'Comic Sans MS';
-    background: linear-gradient(to right, blue, rgb(255, 0, 98));
 }
 
-
-
 header {
-    z-index: 10;
     height: 70px;
     background-color: grey;
-
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +26,7 @@ header {
     display: inline-block;
     color: white;
     font-size: 20px;
-
+    
     margin-top: 20px;
 }
 
@@ -40,12 +35,54 @@ header {
     margin-right: 10px;
 }
 
-.logo i {
+.logo i{
     font-size: 30px;
     background: linear-gradient(purple, red);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.content {
+    font-size: 16px;
+    background-color: #bda07f;
+    border-style: groove;
+    border-color: red;
+    position: sticky;
+    top: 15px;
+    width: 180px;
+    padding: 0px 0px 0px 0px;
+}
+
+/*
+    aside {
+    border-style: groove;
+    border-color: red;
+    border-width: 8px;
+    position: fixed;
+    margin-top: 50%;
+    right: 10px;
+    background: #f0f0f0;
+     padding: 10px; 
+    width: 200px;
+    top: 10vh;
+    }*/
+
+.music {
+    background-color: chocolate;
+    margin: 50px 30px 40px;
+    padding: 6px 15px 6px 20px;
+    width: 500px;
+    border-radius: 10px;
+
+    border-style: dotted;
+    border-color: rgb(252, 181, 1);
+}
+
+.instr {
+    position: relative;
+    padding-left: 10px;
+    border-style: groove;
 }
 
 a:link {
@@ -66,12 +103,12 @@ a:hover {
     width: 100%;
     height: 100%;
     position: fixed;
-
+    
     background-color: white;
     overflow: hidden;
 }
 
-.menu a {
+.menu a{
     display: block;
     padding: 15px;
     color: black;
@@ -83,7 +120,7 @@ a:hover {
 }
 
 .menu a:hover {
-    
+    background-color: grey;
     color: white;
 }
 
@@ -92,6 +129,103 @@ a:hover {
     transition: max-height .5s ease-out;
 }
 
+
+
+#div1 {
+    height: 200px;
+    width: 200px;
+    color: orangered;
+    display: inline;
+}
+
+/* nav :hover {
+    background-color: rgb(147, 199, 251);
+    } */
+
+#div2 {
+    height: 200px;
+    width: 200px;
+    color: rgb(108, 7, 196);
+    display: inline;
+}
+
+#div3 {
+    height: 200px;
+    width: 200px;
+    color: rgb(36, 186, 9);
+    display: inline;
+}
+
+#accord {
+    float: left;
+    margin-right: 1rem;
+}
+
+form {
+    background-color: rgb(26, 130, 250);
+    margin: 50px 30px 40px;
+    padding: 6px 15px 6px 20px;
+    width: 500px;
+}
+
+form :focus {
+    color: rgb(0, 54, 192);
+    background-color: rgb(150, 255, 131);
+}
+
+iframe {
+    margin: 50px 30px 40px;
+}
+
+#redButton {
+    background-color: red;
+}
+
+.container {
+    margin: 50px 30px 40px;
+    width: 550px;
+    display: flex;
+    border-style: solid;
+    border-color: red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block {
+    padding: 10px;
+    margin: 5px;
+    background-color: green;
+}
+
+.block_1 {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.block_2 {
+    border-radius: 10px;
+    width: 66%;
+}
+
+.block_3 {
+    border-radius: 10px;
+    width: 22%;
+
+}
+
+.block_4 {
+    border-radius: 10px;
+    width: 22%;
+}
+
+.block_5 {
+    border-radius: 10px;
+    width: 66%;
+}
+
+
+/* Menu Icon */
 .hamb {
     cursor: pointer;
     float: right;
@@ -160,20 +294,20 @@ a:hover {
     .nav {
         height: 70px;
         max-height: none;
-
+        
         position: relative;
         float: right;
         width: fit-content;
         top: 0;
     }
-
+    
     .menu {
         height: 70px;
         position: relative;
         display: flex;
         align-items: center;
         padding-left: 0;
-
+        
     }
 
     .menu li {
@@ -183,8 +317,10 @@ a:hover {
         height: 100%;
         transition: 0.4s ease;
     }
-    
-
+    .menu a{
+        align-self: center;
+        padding: 0 15px;
+    }
     .menu li:hover{
         background-color: grey;
         
@@ -194,34 +330,73 @@ a:hover {
         color: white;
     }
 
-    .menu a{
-        align-self: center;
-        padding: 0 15px;
-        
+    .menu a:hover {
+        background-color: transparent;
+        color: rgb(0, 255, 21);
+
     }
 
     .hamb {
         display: none;
     }
+}
 
+@media screen and (max-width: 768px) {
     .container {
+
         width: 400px;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .block_2 {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .block_3 {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .block_4 {
+        border-radius: 10px;
+        width: 42%;
+    }
+
+    .block_5 {
+        border-radius: 10px;
+        width: 42%;
     }
 }
 
-.footer {
+.container-2 {
+    height: 100vh;
+    width: 80%;
+    margin-left: 40px;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+
+.container-2 img {
+    margin: 5px;
+    padding: 10px;
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: 10px;
+}
+
+.footer{
     position: relative;
     width: 100%;
-    right: 0;
-
+    
     height: fit-content;
     padding: 15px 15px;
     background: blueviolet;
 }
 
-.footer .cont2 {
+.footer .cont2{
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -235,7 +410,7 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.footer .cont2 .sec h2::before {
+.footer .cont2 .sec h2::before{
     content: '';
     position: absolute;
     bottom: -5px;
@@ -245,11 +420,11 @@ a:hover {
     background: yellow;
 }
 
-.footer .cont2 .sec p {
+.footer .cont2 .sec p{
     color: white;
 }
 
-.sci {
+.sci{
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 80px);
@@ -260,12 +435,11 @@ a:hover {
     grid-template-columns: repeat(4, 80px);
 }
 
-.sci li {
+.sci li{
     list-style: none;
 }
-
-.sci li a {
-
+.sci li a{
+    
     width: 70px;
     height: 48px;
     background-color: rgb(115, 20, 203);
@@ -275,18 +449,16 @@ a:hover {
     text-decoration: none;
     border-radius: 4px;
 }
-
-.sci li a .fa {
+.sci li a .fa{
     color: white;
     font-size: 20px;
-
+    
 }
 
-.quicklinks li {
+.quicklinks li{
     list-style: none;
 }
-
-.quicklinks li a {
+.quicklinks li a{
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
@@ -296,7 +468,7 @@ a:hover {
     color: yellow;
 }
 
-.info {
+.info{
     position: relative;
 }
 
@@ -307,224 +479,99 @@ a:hover {
     list-style: none;
 }
 
-.info li span:nth-child(1) {
+.info li span:nth-child(1){
     color: white;
 }
 
-.info li span {
+.info li span{
     color: white;
-
+    
 }
-
-.info a {
-
+.info a{
+    
     color: white;
     text-decoration: none;
 }
 
-.info a:hover {
+.info a:hover{
     color: yellow;
 }
 
-@media (max-width: 991px) {
-    .footer {
+@media (max-width: 991px){
+    .footer{
         padding: 40px;
     }
-
-    .footer .cont2 {
-        grid-template-columns: repeat(2, 1fr);
+    .footer .cont2{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
-@media (max-width: 768px) {
-    .footer .cont2 {
-        grid-template-columns: repeat(1, 1fr);
+@media (max-width: 768px){
+    .footer .cont2{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
-.box {
-    position: relative;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 200px;
-    margin-bottom: 120px;
-    /* left: 50%;
-    top: 110%;
-   
-    transform: translate(-50%, -50%);  */
-}
-
-@media (max-width: 400px) {
-    .box {
-        margin-top: 150px;
-        margin-left: 15%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 70%;
-    }
-    
-    .aboutus .sci {
-        grid-template-columns: repeat(3, 80px);
-    }
-
-    .container {
-        justify-content: center;
-        
-    }
-
-    .container .form {
-        width: 80%;
-    }
-
-    .box .square:nth-child(1) {
-        display: none;
-    }
-
-    .box .square:nth-child(3) {
-        display: none;
-    }
-
-    .hamb {
-        padding: 40px 10px;
-    }
-}
-
-.box .square {
-    position: absolute;
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    animation: animate 10s linear infinite;
-    animation-delay: calc(-1s * var(--i));
-}
-
-@keyframes animate {
-
-    0%,
-    100% {
-        transform: translateY(-40px);
-    }
-
-    50% {
-        transform: translateY(40px);
-    }
-}
-
-.box .square:nth-child(1) {
-    top: -50px;
-    right: -60px;
-    width: 100px;
-    height: 100px;
-}
-
-.box .square:nth-child(2) {
-    top: 150px;
-    left: -100px;
-    width: 120px;
-    height: 120px;
-    z-index: 2;
-
-}
-
-.box .square:nth-child(3) {
-    bottom: 50px;
-    right: -60px;
-    width: 80px;
-    height: 80px;
-    z-index: 2;
-}
-
-.box .square:nth-child(4) {
-    bottom: -80px;
-    left: 100px;
-    width: 50px;
-    height: 50px;
-
-}
-
-.box .square:nth-child(5) {
-    top: -80px;
-    left: 140px;
-    width: 60px;
-    height: 60px;
-
-}
-
-.container {
-    position: relative;
-    width: 400px;
+.composer {
+    margin: 90px;
+    width: 60%;
+    right: 90px;
+    height: fit-content;
     min-height: 400px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    border: solid;
+    padding: 15px;
+    border-color: orangered;
+    background-color: #bda07f;
+   
+    
+}
+.composer h1 {
+    padding-bottom: 1rem;
+}
+
+.composer audio{
+    color: aqua;
+}
+.photo1 {
+    float: left;
+    margin-right: 1rem;
+    
+}
+
+.music1 {
+    background-color: rgb(255, 175, 71);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.like {
+    
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
     display: flex;
+    border-radius: 50%;
+    background-color: rgb(167, 167, 167);
     justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    color: white;
 }
 
-.form {
-    position: relative;
-    width: 70%;
-    height: 100%;
-    padding: 30px;
-    right: 25px;
+.like .fa-solid {
+    align-self: center;
+    margin-left: -1px;
+    /* color: grey; */
 }
 
-.form h2 {
-    position: relative;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
-}
-
-.form h2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 80px;
-    height: 4px;
-    background: #fff;
-}
-
-.form .inputBox {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.form .inputBox input {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.2);
+.btn {
+    background: transparent;
     border: none;
     outline: none;
-    padding: 10px 20px;
-    border-radius: 35px;
-    padding: 10px 20px;
+    color: grey;
 }
 
-.form .inputBox input::placeholder {
-    color: white;
-}
-
-.form .inputBox input[type="submit"] {
-    background: #fff;
-    color: #666;
-    max-width: 100px;
+.btn:hover {
     cursor: pointer;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.forget {
-    margin-top: 5px;
-    color: white;
-}
-
-.forget a {
-    color: white;
-    font-weight: 600;
 }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Первый музыкальный</title>
+    
+    <script src="https://kit.fontawesome.com/1680c94fca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="compos.css" rel="stylesheet">
+    <link rel="icon" type="image/jpg"
+        href="https://st2.depositphotos.com/1764439/11206/i/450/depositphotos_112064862-stock-photo-heart-formed-of-treble-clef.jpg">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo"><i class="fa-solid fa-microphone"></i> ПЕРВЫЙ МУЗЫКАЛЬНЫЙ</div>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"><span></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="registr.html"><b>Вход</b></a></li>
+                <li><a href="prac_2(1).html"><b>Композиторы</b></a></li>
+                <li><a href="index.html"><b>Галерея</b></a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="composer">
+            <h1>Михаил Иванович Глинка</h1>
+            <div class="photo1">
+                <img src="http://shkolnaya-photographiya.ru/upload/teachersphoto103.jpg" width="220" height="300">
+            </div>
+            <p>Великий русский композитор. Автор таких известных произведений, как опера «Руслан и Людмила»,
+                «Камаринская» симфония и «Вальс-фантазия»,
+                «Патетическое трио» и многие другие. Широко известен своими романсами.</p><br>
+            <p>Михаил Иванович Глинка родился в поселке Новоспасском (Смоленская губерния) 20 мая 1804 года (по старому
+                стилю). В возрасте десяти лет
+                мальчик стал обучаться игре на музыкальных инструментах — фортепиано и скрипке.</p><br>
+            <p>В 1818 году Глинка поступил в Благородный пансион Петербургского педагогического института. Здесь он
+                начал сочинять свои первые романсы, которые уже тогда пользовались большой популярностью.
+                Закончив это учебное заведение, в 1822 году Глинка устроился на государственную службу. Но вскоре он
+                оставил казенное место, решив всецело посвятить себя музыке.</p><br>
+            <p>В начале 30-х годов композитор много путешествовал по Европе, знакомясь с местными музыкальными
+                традициями, а вернувшись, стал писать свою первую оперу. Она получила название «Жизнь за царя» (1836) и
+                имела успех на сцене Петербурга. В 1842 году состоялась премьера второй русской оперы Глинки — «Руслана
+                и Людмилы».</p><br>
+            <p>Вернувшись в Петербург, композитор стал преподавать пение и заниматься подготовкой опер. В 1856 году
+                Глинка уехал в Берлин для изучения полифонии старых мастеров. Композитор хотел использовать в своем
+                дальнейшем творчестве церковные напевы Древней Руси, но осуществить эту мечту ему не удалось, поскольку
+                зимой 1857 года он умер в Германии.</p><br><hr><br>
+            <h2>Популярные произведения</h2>
+            <div class="music1">
+                <details>
+                    <summary>Славься</summary> 
+                    <audio src="Глинка-Славься(mixpromonet)_(allmp3.su).mp3" controls \></audio><br>
+                    <div class="like">
+                        <Button onclick="Like(this)" id="likebtn" class="btn"><i class="fa-solid fa-thumbs-up"></i></Button>
+                    </div>
+                </details>
+                <details>
+                    <summary>Руслан и Людмила</summary> 
+                    <audio src="МихаилИвановичГлинка-РусланИЛюдмила_(allmp3.su).mp3" controls \></audio><br>
+                    <div class="like">
+                        <Button onclick="Like(this)" id="likebtn" class="btn"><i class="fa-solid fa-thumbs-up"></i></Button>
+                    </div>
+                </details>
+            </div>
+            
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="cont2">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>В музыке нет ничего особенного. Надо просто ударять по
+                    правильным клавишам в правильное время – а инструмент играет сам.
+                </p>
+                <ul class="sci">
+                    <li><a href="https://vk.com/usipov"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                    <li><a href="https://t.me/AstroKettle"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/AstroKettle"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Быстрые ссылки</h2>
+
+                <ul class="sci">
+                    <li><a href="registr.html">Вход</a></li>
+                <li><a href="prac_2(1).html">Композиторы</a></li>
+                <li><a href="index.html">Галерея</a> </li>
+                    
+                </ul>
+            </div>
+            <!-- <div class="sec quicklinks">
+                <h2>Shop</h2>
+
+                <ul class="sci">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Watch</a></li>
+                </ul>
+            </div> -->
+            <div class="sec contact">
+                <h2>Контакты</h2>
+
+                <ul class="info">
+                    <li>
+
+                        <span>г. Москва, метро Юго-Западная<br>
+                            пр. Вернадского, д.78,<br>Россия</span>
+                    </li>
+                    <li>
+                        <span>
+                            <p><a href="tel:89636363524">+7 963 636 35 24</a></p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p><a href="mailto:AstroFizik51@yandex.ru">AstroFizik51@yandex.ru</a></p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="compos.js"></script>
+</body>
+
+</html>

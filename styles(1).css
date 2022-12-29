@@ -114,7 +114,8 @@ a:hover {
 }
 
 .menu a:hover {
-    background-color: green;
+    
+    color: white;
 }
 
 .nav {
@@ -305,14 +306,23 @@ iframe {
 
     .menu li {
         float: left;
+        display: flex;
         list-style: none;
-        height: fit-content;
+        height: 100%;
+        transition: 0.4s ease;
+    }
+    .menu a{
+        align-self: center;
+        padding: 0 15px;
     }
 
-    .menu a:hover {
-        background-color: transparent;
-        color: purple;
+    .menu li:hover{
+        background-color: grey;
+        
+    }
 
+    .menu li:hover a{
+        color: white;
     }
 
     .hamb {
