@@ -395,12 +395,19 @@ iframe {
 }
 
 .footer{
-    position: relative;
+    position: absolute;
     width: 100%;
-    
+    bottom: 0;
     height: fit-content;
     padding: 15px 15px;
     background: blueviolet;
+    
+}
+
+@media (max-width: 390px) {
+    .footer {
+        top: 65%;
+    }
 }
 
 .footer .cont2{
@@ -528,7 +535,7 @@ iframe {
     border-radius: 20px;
     color: white;
     font-size: 25px;
-    margin: 15% 15% 8% 15%;
+    margin: 10% 15% 8% 15%;
 }
 
 @media (max-width: 768px){
