@@ -404,7 +404,7 @@ iframe {
     
 }
 
-@media (max-width: 390px) {
+@media screen (max-width: 500px) {
     .footer {
         top: 65%;
     }
